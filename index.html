@@ -10,5 +10,11 @@
 <body>
 郝海亮DIY的模板
 <%= htmlWebpackPlugin.options.date %>
+<%= JSON.stringify(htmlWebpackPlugin) %>
+<hr>
+<% for(var key in htmlWebpackPlugin) { %>
+<%= key %>
+<% } %>
+
 </body>
 </html>
