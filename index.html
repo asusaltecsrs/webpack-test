@@ -11,6 +11,12 @@
 <body>
 郝海亮DIY的模板
 
+
+
+<% for (var key in htmlWebpackPlugin.files.chunks){%>
+<% if (key !== 'mainKey'){%>
+<script src='<%=htmlWebpackPlugin.files.chunks[key].entry%>'></script>
+<%}}%>
 <!-- 这是源码注释 -->
 </body>
 </html>

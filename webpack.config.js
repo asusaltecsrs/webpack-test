@@ -15,15 +15,18 @@ module.exports = {
       filename: 'a.html',
       template: 'index.html',
       title:'this is a file',
+      inject:false,
     }),
   new HtmlWebpackPlugin({
       filename: 'b.html',
       template: 'index.html',
       title:'this is b file',
+      inject:false,
     }),
   new HtmlWebpackPlugin({
       filename: 'c.html',
       template: 'index.html',
       title:'this is c file',
+      inject:false,
     })]
 }
