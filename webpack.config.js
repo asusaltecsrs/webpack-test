@@ -9,8 +9,7 @@ module.exports = {
   },
   output: {
     path: "./dist/",
-    filename: 'js/[name]-[chunkhash].bundle.js',
-    publicPath: "http://www.helloan.cn"
+    filename: 'js/[name]-[chunkhash].bundle.js'
   },
   plugins: [new HtmlWebpackPlugin({
       filename: 'a.html',
