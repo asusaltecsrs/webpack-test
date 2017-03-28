@@ -1,3 +1,5 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: {
     mainKey:"./src/script/main.js",
@@ -6,5 +8,6 @@ module.exports = {
   output: {
     path: "./dist/js",
     filename: '[name]-[chunkhash].bundle.js'
-  }
+  },
+  plugins: [new HtmlWebpackPlugin()]
 }
