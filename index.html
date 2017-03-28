@@ -6,17 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title><%= htmlWebpackPlugin.options.title %></title>
 <link rel="shortcut icon" type="image/x-icon" href="http://static.helloan.cn/image/favicon.ico">
-<script src="<%=compilation.assets[htmlWebpackPlugin.files.chunks.mainKey.entry.substr(htmlWebpackPlugin.files.publicPath.length)].source()%>"></script>
 </head>
 <body>
 郝海亮DIY的模板
 
 
 
-<% for (var key in htmlWebpackPlugin.files.chunks){%>
-<% if (key !== 'mainKey'){%>
-<script src='<%=htmlWebpackPlugin.files.chunks[key].entry%>'></script>
-<%}}%>
 <!-- 这是源码注释 -->
 </body>
 </html>

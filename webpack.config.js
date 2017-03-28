@@ -1,32 +1,29 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path = require('path');
 
 module.exports = {
-  entry: {
-    mainKey:"./src/script/main.js",
-    aKey:"./src/script/a.js",
-    bKey:"./src/script/b.js",
-    cKey:"./src/script/c.js"
-  },
+  context:'/Users/haohailiang/Desktop/webpack-test',
+  entry:"./src/app.js",
   output: {
     path: "./dist/",
-    filename: 'js/[name]-[chunkhash].bundle.js'
+    filename: 'js/[name].bundle.js'
+  },
+  module:{
+    loaders:[
+      {
+        test:/\.js$/,
+        loader:'babel',
+        include:path.resolve(__dirname, 'src'),
+        exclude:path.resolve(__dirname, 'node_modules'),
+        query:{
+          "presets": ["es2015"]
+        }
+      }
+    ]
   },
   plugins: [new HtmlWebpackPlugin({
-      filename: 'a.html',
+      filename: 'index.html',
       template: 'index.html',
-      title:'this is a file',
-      inject:false,
-    }),
-  new HtmlWebpackPlugin({
-      filename: 'b.html',
-      template: 'index.html',
-      title:'this is b file',
-      inject:false,
-    }),
-  new HtmlWebpackPlugin({
-      filename: 'c.html',
-      template: 'index.html',
-      title:'this is c file',
-      inject:false,
+      inject:'body',
     })]
 }

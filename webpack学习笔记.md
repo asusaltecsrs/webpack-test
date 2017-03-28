@@ -43,3 +43,8 @@ https://github.com/kangax/html-minifier#options-quick-reference
 
 >>运行package.json当中的文件
 npm run hehe
+
+>>安装ES6转换语法工具
+sudo cnpm install babel-loader --save-dev
+sudo cnpm install babel-core --save-dev
+sudo cnpm install babel-preset-es2015 -g

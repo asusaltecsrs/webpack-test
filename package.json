@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
   "dependencies": {
     "Base64": "^0.2.1",
     "acorn": "^3.3.0",
@@ -269,10 +274,13 @@
     "xml-char-classes": "^1.0.0",
     "yargs": "^3.10.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "hehe":"sudo webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' --progress --display-modules --display-reasons"
+    "hehe": "sudo webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' --progress --display-modules --display-reasons"
   },
   "author": "",
   "license": "ISC"
