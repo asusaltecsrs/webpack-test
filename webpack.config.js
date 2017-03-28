@@ -15,6 +15,10 @@ module.exports = {
       template: 'index.html',
       title:'webpack haohailiaing diy name',
       inject:'head',
-      date:new Date()
+      date:new Date(),
+      minify:{
+        removeComments:true,
+        collapseWhitespace:true
+      }
     })]
 }
