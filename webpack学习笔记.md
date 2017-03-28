@@ -48,3 +48,12 @@ npm run hehe
 sudo cnpm install babel-loader --save-dev
 sudo cnpm install babel-core --save-dev
 sudo cnpm install babel-preset-es2015 -g
+
+>>安装postcss-loader
+sudo cnpm install postcss-loader --save-dev
+
+>>安装less-loader
+sudo cnpm install less-loader --save-dev
+
+>>安装 html-loader
+sudo cnpm install html-loader --save-dev

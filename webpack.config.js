@@ -18,9 +18,30 @@ module.exports = {
         query:{
           "presets": ["es2015"]
         }
-      }
+      },
+      { 
+        test: /\.html$/, 
+        loader: "html-loader" 
+      },
+      { 
+        test: /\.css$/, 
+        loader: "style!css!postcss" 
+      },
+      { 
+        test: /\.less$/, 
+        loader: "style!css!postcss!less" 
+      },
+      { 
+        test: /\.scss$/, 
+        loader: "style!css!postcss!sass" 
+      },
     ]
   },
+  postcss:[
+    require('autoprefixer')({
+      broswers:['last 150 versions']
+    })
+  ],
   plugins: [new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',

@@ -1,3 +1,6 @@
+.flex {
+  display: flex;
+}
 .layer {
   width: 600px;
   height: 200px;
