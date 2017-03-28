@@ -3,7 +3,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     mainKey:"./src/script/main.js",
-    aKey:"./src/script/a.js"
+    aKey:"./src/script/a.js",
+    bKey:"./src/script/b.js",
+    cKey:"./src/script/c.js"
   },
   output: {
     path: "./dist/",
@@ -11,10 +13,24 @@ module.exports = {
     publicPath: "http://www.helloan.cn"
   },
   plugins: [new HtmlWebpackPlugin({
-      filename: 'index-[hash].html',
+      filename: 'a.html',
       template: 'index.html',
-      title:'webpack haohailiaing diy name',
-      inject:false,
-      date:new Date(),
+      title:'this is a file',
+      inject:'body',
+      chunks:['mainKey', 'aKey']
+    }),
+  new HtmlWebpackPlugin({
+      filename: 'b.html',
+      template: 'index.html',
+      title:'this is b file',
+      inject:'body',
+      chunks:['bKey']
+    }),
+  new HtmlWebpackPlugin({
+      filename: 'c.html',
+      template: 'index.html',
+      title:'this is c file',
+      inject:'body',
+      chunks:['cKey']
     })]
 }
