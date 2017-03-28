@@ -14,11 +14,7 @@ module.exports = {
       filename: 'index-[hash].html',
       template: 'index.html',
       title:'webpack haohailiaing diy name',
-      inject:'head',
+      inject:false,
       date:new Date(),
-      minify:{
-        removeComments:true,
-        collapseWhitespace:true
-      }
     })]
 }
