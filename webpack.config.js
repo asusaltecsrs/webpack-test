@@ -12,6 +12,7 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({
       filename: 'index-[hash].html',
       template: 'index.html',
+      title:'webpack haohailiaing diy name',
       inject:'head'
     })]
 }
