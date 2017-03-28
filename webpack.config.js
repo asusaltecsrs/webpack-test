@@ -15,21 +15,15 @@ module.exports = {
       filename: 'a.html',
       template: 'index.html',
       title:'this is a file',
-      inject:'body',
-      chunks:['mainKey', 'aKey']
     }),
   new HtmlWebpackPlugin({
       filename: 'b.html',
       template: 'index.html',
       title:'this is b file',
-      inject:'body',
-      chunks:['bKey']
     }),
   new HtmlWebpackPlugin({
       filename: 'c.html',
       template: 'index.html',
       title:'this is c file',
-      inject:'body',
-      chunks:['cKey']
     })]
 }
