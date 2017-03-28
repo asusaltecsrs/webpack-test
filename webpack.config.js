@@ -6,8 +6,10 @@ module.exports = {
     aKey:"./src/script/a.js"
   },
   output: {
-    path: "./dist/js",
-    filename: '[name]-[chunkhash].bundle.js'
+    path: "./dist/",
+    filename: 'js/[name]-[chunkhash].bundle.js'
   },
-  plugins: [new HtmlWebpackPlugin()]
+  plugins: [new HtmlWebpackPlugin({
+      template: 'index.html'
+    })]
 }
