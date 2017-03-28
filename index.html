@@ -10,12 +10,6 @@
 </head>
 <body>
 郝海亮DIY的模板
-<%= htmlWebpackPlugin.options.date %>
-<%= JSON.stringify(htmlWebpackPlugin) %>
-<hr>
-<% for(var key in htmlWebpackPlugin) { %>
-<%= key %>
-<% } %>
 
 <script src="<%=htmlWebpackPlugin.files.chunks.aKey.entry%>"></script>
 <!-- 这是源码注释 -->
