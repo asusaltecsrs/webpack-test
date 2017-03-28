@@ -10,6 +10,7 @@ module.exports = {
     filename: 'js/[name]-[chunkhash].bundle.js'
   },
   plugins: [new HtmlWebpackPlugin({
+      filename: 'index-[hash].html',
       template: 'index.html'
     })]
 }
