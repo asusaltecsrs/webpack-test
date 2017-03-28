@@ -33,7 +33,13 @@ webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' --p
 
 >>
 https://github.com/jantimon/html-webpack-plugin
+http://webpack.github.io/docs/using-plugins.html
+配置的详细参数
+https://www.npmjs.com/package/html-webpack-plugin
 sudo cnpm install html-webpack-plugin -g
+
+压缩文件的配置参数
+https://github.com/kangax/html-minifier#options-quick-reference
 
 >>运行package.json当中的文件
 npm run hehe
