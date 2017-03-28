@@ -13,6 +13,7 @@ module.exports = {
       filename: 'index-[hash].html',
       template: 'index.html',
       title:'webpack haohailiaing diy name',
-      inject:'head'
+      inject:'head',
+      date:new Date()
     })]
 }
