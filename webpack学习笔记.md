@@ -1,0 +1,39 @@
+>>初始化package.json文件
+npm init
+
+>>安装webpack[到当前文件夹]
+npm install webpack@1.13.2 --save-dev
+
+>>打开当前的目录
+open .
+
+>>手动压缩文件
+webpack hello.js hello.bundle.js
+
+>>css loader安装
+sudo cnpm install css-loader -g
+
+>>css-loader style-loader安装
+sudo cnpm install css-loader style-loader --save-dev
+
+>>命令行中条用css-loader style-loader
+webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader'
+
+>>监听不断的变化
+webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' --watch
+
+>>显示打包进度
+webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' --progress
+
+>>显示打包的模块
+webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' --progress --display-modules
+
+>>显示打包原因
+webpack hello.js hello.bundle.js --module-bind 'css=style-loader!css-loader' --progress --display-modules --display-reasons
+
+>>
+https://github.com/jantimon/html-webpack-plugin
+sudo cnpm install html-webpack-plugin -g
+
+>>运行package.json当中的文件
+npm run hehe
