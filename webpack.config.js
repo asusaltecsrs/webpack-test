@@ -41,17 +41,13 @@ module.exports = {
       },
       { 
         test: /\.(png|jpg|gif|svg)$/i, 
-        loader: "url-loader",
-        query:{
-          limit:20000,
-          name:'assets/[name]-[hash:5].[ext]'
-        }
+        loader: "url-loader?limit=20000&name=assets/[name]-[hash:5].[ext]"
       },
     ]
   },
   postcss:[
     require('autoprefixer')({
-      broswers:['last 150 versions']
+      browsers:['last 40 versions']
     })
   ],
   plugins: [new HtmlWebpackPlugin({

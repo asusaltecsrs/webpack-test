@@ -1,5 +1,7 @@
 .flex {
   display: flex;
+  border: 12px;
+  opacity: .6;
 }
 .layer {
   width: 600px;
@@ -12,4 +14,5 @@
   height: 200px;
   background: red;
   margin: 100px auto;
+  flex: 1;
 }
