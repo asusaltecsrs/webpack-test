@@ -54,6 +54,11 @@ sudo cnpm install postcss-loader --save-dev
 
 >>安装less-loader
 sudo cnpm install less-loader --save-dev
+sudo cnpm install less --save-dev
+sudo cnpm install file-loader --save-dev
 
 >>安装 html-loader
 sudo cnpm install html-loader --save-dev
+
+>>安装ejs-loader
+sudo cnpm install ejs-loader --save-dev
