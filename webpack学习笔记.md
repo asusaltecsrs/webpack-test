@@ -62,3 +62,6 @@ sudo cnpm install html-loader --save-dev
 
 >>安装ejs-loader
 sudo cnpm install ejs-loader --save-dev
+
+>>图片base64编码
+sudo cnpm install url-loader --save-dev
